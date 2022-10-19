@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// Server name:Yingying(Judy) Feng Student Number: 301176809 Date:2022-10-16
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
