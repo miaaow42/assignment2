@@ -14,4 +14,5 @@ const AlbumSchema = new Schema({
     collection: "album"
 });
 const Model = mongoose_1.default.model("Album", AlbumSchema);
+exports.default = Model;
 //# sourceMappingURL=album.js.map
