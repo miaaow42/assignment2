@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!-- CSS Goes Here -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./Content/app.css">
+</head>
+<body>
+    <!-- Main navigation Section-->
+    <header>
+        <%- include ('./component/header.ejs'); %>
+    </header>
+
+
+
+    <!-- Content Section -->
+    <main>
+        <!-- Content goes here -->
+        <%- include('content/' + page + '.ejs'); %>
+    </main>
+
+
+    <!-- Site-wide footer Section-->
+    <footer>
+        <%- include ('./component/footer.ejs'); %>
+    </footer>
+    
+
+
+    <!-- JavaScript Goes here -->
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>

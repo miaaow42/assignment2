@@ -1,0 +1,35 @@
+{
+    "album":
+    [
+        {
+            "Name": "Astronaut",
+            "Year": "2022",
+            "Singer": "Seokjin",
+            "Rating": "5 Starts"
+        },
+        {
+            "Name": "Aurora",
+            "Year": "2024",
+            "Singer": "Seokjin",
+            "Rating": "5 Starts"
+        },
+        {
+            "Name": "Voyager - at the end of journey",
+            "Year": "2025",
+            "Singer": "Seokjin",
+            "Rating": "5 Starts"
+        },
+        {
+            "Name": "Voyager 2 ",
+            "Year": "2026",
+            "Singer": "Seokjin",
+            "Rating": "5 Starts"
+        },
+        {
+            "Name": "Voyager 3 - the start of journey",
+            "Year": "2026",
+            "Singer": "Seokjin",
+            "Rating": "5 Starts"
+        }
+    ]
+}
