@@ -8,24 +8,24 @@
         <ul class=" px-5 navbar-nav me-auto navbar-text">
 
             <li class="px-5 nav-item">     
-              <!-- if is home page, active icon,doesn't work here, figure out future-->
-              <a class="nav-link"  <%= (page == 'home') ? 'active': 'inactive'; %>  aria-current="page" href="/home"><i class="fa-solid fa-house"></i></a>
+              <!-- if is home page, active icon -->
+              <a class="nav-link"  <%= (page == 'home') ? 'active': ''; %>  aria-current="page" href="/home"><i class="fa-solid fa-house-user"></i></a>
             </li> 
 
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'about') ? 'active': ''; %> aria-current="page" href="/about"><i class="fa-solid fa-address-card"></i></a>
+                <a class="nav-link" <%= (page == 'about') ? 'active': ''; %> aria-current="page" href="/about">About Me</a>
             </li> 
           
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'projects') ? 'active': ''; %> aria-current="page" href="/projects"><i class="fa-solid fa-code"></i></a>
+                <a class="nav-link" <%= (page == 'projects') ? 'active': ''; %> aria-current="page" href="/projects">Projects</a>
             </li> 
           
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'services') ? 'active': ''; %> aria-current="page" href="/services"><i class="fa-solid fa-pen-nib"></i></a>
+                <a class="nav-link" <%= (page == 'services') ? 'active': ''; %> aria-current="page" href="/services">Services</a>
             </li> 
 
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'contact') ? 'active': ''; %> aria-current="page" href="/contact"><i class="fa-solid fa-message"></i></a>
+                <a class="nav-link" <%= (page == 'contact') ? 'active': ''; %> aria-current="page" href="/contact">Contact</a>
             </li> 
             
             <!-- if we see displayName -->

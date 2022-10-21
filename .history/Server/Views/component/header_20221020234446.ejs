@@ -7,34 +7,26 @@
       <div class=" collapse navbar-collapse" id="navbarSupportedContent">
         <ul class=" px-5 navbar-nav me-auto navbar-text">
 
-            <li class="px-5 nav-item">     
-              <!-- if is home page, active icon,doesn't work here, figure out future-->
-              <a class="nav-link"  <%= (page == 'home') ? 'active': 'inactive'; %>  aria-current="page" href="/home"><i class="fa-solid fa-house"></i></a>
+            <li class="px-5 nav-item">
+              <a class="nav-link" aria-current="page" href="/home">Home</a>
             </li> 
 
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'about') ? 'active': ''; %> aria-current="page" href="/about"><i class="fa-solid fa-address-card"></i></a>
+                <a class="nav-link" aria-current="page" href="/about">About Me</a>
             </li> 
           
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'projects') ? 'active': ''; %> aria-current="page" href="/projects"><i class="fa-solid fa-code"></i></a>
+                <a class="nav-link" aria-current="page" href="/projects">Projects</a>
             </li> 
           
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'services') ? 'active': ''; %> aria-current="page" href="/services"><i class="fa-solid fa-pen-nib"></i></a>
+                <a class="nav-link" aria-current="page" href="/services">Services</a>
             </li> 
 
             <li class="px-5 nav-item">
-                <a class="nav-link" <%= (page == 'contact') ? 'active': ''; %> aria-current="page" href="/contact"><i class="fa-solid fa-message"></i></a>
+                <a class="nav-link" aria-current="page" href="/contact">Contact</a>
             </li> 
-            
-            <!-- if we see displayName -->
-            <% if(displayName){ %> 
-
-                <li class="px-5 nav-item">
-                  <a class="nav-link" aria-current="page" href="/album-list"><i class="fa-duotone fa-album"></i></a>
-                </li> 
-
+            <% if(displayName){ %>
                 <li class="px-5 nav-item ">
                   <a class="nav-link" aria-current="page" href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
                 </li>
@@ -43,12 +35,16 @@
                 <a class="nav-link" aria-current="page" href="/logoin"><i class="fa-solid fa-user"></i></a>
               </li>
               <% } %>
+
+            <li class="px-5 nav-item ">
+                <a class="nav-link" aria-current="page" href="/login"><i class="fa-solid fa-user"></i></a>
               <!-- <a class="nav-link dropdown-toggle" href="/login" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Login
                 </a>
                 <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
                   For future use
                 </div> -->
+            </li> 
         </ul>
       </div>
     </div>

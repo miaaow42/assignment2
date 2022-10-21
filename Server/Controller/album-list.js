@@ -11,7 +11,7 @@ function DisplayAlbumList(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.render('index', { title: 'Album List', page: 'album-list', album: albumCollection });
+        res.render('index', { title: 'Album List', page: 'album-list', album: albumCollection, displayName: '' });
     });
 }
 exports.DisplayAlbumList = DisplayAlbumList;
