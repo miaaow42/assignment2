@@ -46,7 +46,7 @@ export function DisplayAboutPage(req: express.Request, res: express.Response, ne
   res.render('index', { title: 'About Us', page: 'about', displayName:  UserDisplayName(req) });
 }
 
-export function DisplayProjectPage(req: express.Request, res: express.Response, next: express.NextFunction) 
+export function DisplayProjectsPage(req: express.Request, res: express.Response, next: express.NextFunction) 
 {
     res.render('index', { title: 'Our Projects', page: 'projects', displayName: UserDisplayName(req)  });
 }

@@ -27,6 +27,6 @@ export function DisplayAlbumListPage(req: express.Request, res: express.Response
         console.error(err.message);
         res.end(err);
       }
-      res.render('index', { title: 'Album List', page: 'album-list', movies: albumCollection, displayName:  UserDisplayName(req)  });
+      res.render('index', { title: 'Movie List', page: 'movie-list', movies: albumCollection, displayName:  UserDisplayName(req)  });
     });
 }

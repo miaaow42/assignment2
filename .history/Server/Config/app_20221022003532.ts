@@ -104,6 +104,8 @@
 // export default app;
 
 
+
+
 import createError from 'http-errors';
 import express, { NextFunction } from 'express';
 import path from 'path';
@@ -130,7 +132,7 @@ import User from '../Models/user';
 
 // import router data from the router module(s)
 import indexRouter from '../Routes/index'; 
-import movieListRouter from '../Routes/album-list';
+import movieListRouter from '../Routes/movie-list';
 import authRouter from '../Routes/auth';
 
 // create the application object - which is of type express
@@ -138,13 +140,13 @@ const app = express();
 
 // Complete the DB Connection Configuration
 import * as DBConfig from './db';
-mongoose.connect(DBConfig.LocalURI || DBConfig.LocalURI);
+mongoose.connect(DBConfig.RemoteURI || DBConfig.LocalURI);
 const db = mongoose.connection; // alias for the mongoose connection
 
 // Listen for Connections or Errors
 db.on("open", function()
 {
-  console.log(`Connected to MongoDB at: ${(DBConfig.LocalURI) ? DBConfig.HostName : "localhost"}`);
+  console.log(`Connected to MongoDB at: ${(DBConfig.RemoteURI) ? DBConfig.HostName : "localhost"}`);
 });
 
 db.on("error", function()

@@ -7,6 +7,6 @@ const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 const Util_1 = require("../Util");
 const album_list_1 = require("../Controller/album-list");
-router.get('/album-list', Util_1.AuthGuard, album_list_1.DisplayAlbumList);
+router.get('/album-list', Util_1.AuthGuard, album_list_1.DisplayAlbumListPage);
 exports.default = router;
 //# sourceMappingURL=album-list.js.map
