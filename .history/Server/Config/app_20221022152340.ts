@@ -138,7 +138,6 @@ const app = express();
 
 // Complete the DB Connection Configuration
 import * as DBConfig from './db';
-
 //mongoose.connect(DBConfig.LocalURI || DBConfig.LocalURI);
 mongoose.connect(DBConfig.RemoteURI);//switch to remoteURI
 const db = mongoose.connection; // alias for the mongoose connection
@@ -146,7 +145,7 @@ const db = mongoose.connection; // alias for the mongoose connection
 // Listen for Connections or Errors
 db.on("open", function()
 {
-  console.log(`Connected to MongoDB at: ${ DBConfig.HostName}`);
+  console.log(`Connected to MongoDB at: ${(DBConfig.RemoteURI)}`);
 });
 
 db.on("error", function()

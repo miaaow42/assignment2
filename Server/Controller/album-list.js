@@ -12,7 +12,7 @@ function DisplayAlbumListPage(req, res, next) {
             console.error(err.message);
             res.end(err);
         }
-        res.render('index', { title: 'Album List', page: 'album-list', movies: albumCollection, displayName: (0, Util_1.UserDisplayName)(req) });
+        res.render('index', { title: 'Album List', page: 'album-list', album: albumCollection, displayName: (0, Util_1.UserDisplayName)(req) });
     });
 }
 exports.DisplayAlbumListPage = DisplayAlbumListPage;

@@ -44,10 +44,10 @@ const album_list_1 = __importDefault(require("../Routes/album-list"));
 const auth_1 = __importDefault(require("../Routes/auth"));
 const app = (0, express_1.default)();
 const DBConfig = __importStar(require("./db"));
-mongoose_1.default.connect(DBConfig.LocalURI || DBConfig.LocalURI);
+mongoose_1.default.connect(DBConfig.RemoteURI);
 const db = mongoose_1.default.connection;
 db.on("open", function () {
-    console.log(`Connected to MongoDB at: ${(DBConfig.LocalURI) ? DBConfig.HostName : "localhost"}`);
+    console.log(`Connected to MongoDB at: ${DBConfig.HostName}`);
 });
 db.on("error", function () {
     console.error(`Connection Error`);

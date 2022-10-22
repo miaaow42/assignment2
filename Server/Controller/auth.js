@@ -11,14 +11,14 @@ function DisplayLoginPage(req, res, next) {
     if (!req.user) {
         return res.render('index', { title: "Login", page: "login", messages: req.flash("loginMessage"), displayName: (0, Util_1.UserDisplayName)(req) });
     }
-    return res.redirect('/movie-list');
+    return res.redirect('/album-list');
 }
 exports.DisplayLoginPage = DisplayLoginPage;
 function DisplayRegisterPage(req, res, next) {
     if (!req.user) {
         return res.render('index', { title: "Register", page: "register", messages: req.flash("registerMessage"), displayName: (0, Util_1.UserDisplayName)(req) });
     }
-    return res.redirect('/movie-list');
+    return res.redirect('/album-list');
 }
 exports.DisplayRegisterPage = DisplayRegisterPage;
 function ProcessLoginPage(req, res, next) {
