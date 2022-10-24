@@ -23,7 +23,7 @@ export function ProcessUpdateContactPage(req: express.Request, res: express.Resp
 {
     let id = req.params.id;
     console.log(req.body);
-    console.log(req.body);
+    
     let updateContact = new Contacts
     ({
         _id: id,
@@ -39,8 +39,8 @@ export function ProcessUpdateContactPage(req: express.Request, res: express.Resp
         }
         else
         {
-            res.redirect('/business-contact-list');
+            res.redirect('business-contact-list');
         }
-        
+        console.log(id);
     });
 }

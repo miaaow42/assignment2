@@ -22,8 +22,7 @@ export function DisplayUpdateContactPage(req: express.Request, res: express.Resp
 export function ProcessUpdateContactPage(req: express.Request, res: express.Response, next: express.NextFunction) 
 {
     let id = req.params.id;
-    console.log(req.body);
-    console.log(req.body);
+    console.log(id);
     let updateContact = new Contacts
     ({
         _id: id,
@@ -39,8 +38,8 @@ export function ProcessUpdateContactPage(req: express.Request, res: express.Resp
         }
         else
         {
-            res.redirect('/business-contact-list');
+            res.redirect('business-contact-list');
         }
-        
+        console.log("suuuuuuu")
     });
 }

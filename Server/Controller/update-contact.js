@@ -20,19 +20,20 @@ exports.DisplayUpdateContactPage = DisplayUpdateContactPage;
 function ProcessUpdateContactPage(req, res, next) {
     let id = req.params.id;
     console.log(req.body);
+    console.log(req.body);
     let updateContact = new contacts_1.default({
-        id: id,
+        _id: id,
         Name: req.body.Name,
         Number: req.body.Number,
         Email: req.body.Email
     });
-    contacts_1.default.updateOne(updateContact._id, (err) => {
+    contacts_1.default.updateOne({ _id: id }, updateContact, {}, (err) => {
         if (err) {
             console.log(err);
             res.end(err);
         }
         else {
-            res.redirect('business-contact-list');
+            res.redirect('/business-contact-list');
         }
     });
 }

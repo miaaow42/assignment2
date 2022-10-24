@@ -39,7 +39,7 @@ export function ProcessUpdateContactPage(req: express.Request, res: express.Resp
         }
         else
         {
-            res.redirect('/business-contact-list');
+            res.redirect('business-contact-list');
         }
         
     });
