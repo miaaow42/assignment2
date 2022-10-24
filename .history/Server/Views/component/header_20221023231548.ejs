@@ -7,10 +7,10 @@
       <div class=" collapse navbar-collapse" id="navbarSupportedContent">
         <ul class=" px-5 navbar-nav me-auto navbar-text">
 
-            <!--<li class="px-5 nav-item">     
-               if is home page, active icon,doesn't work here, figure out future
+            <li class="px-5 nav-item">     
+              <!-- if is home page, active icon,doesn't work here, figure out future-->
               <a class="nav-link"  <%= (page == 'home') ? 'active': 'inactive'; %>  aria-current="page" href="/home"><i class="fa-solid fa-house"></i>Home</a>
-            </li> -->
+            </li> 
 
             <li class="px-5 nav-item">
                 <a class="nav-link" <%= (page == 'about') ? 'active': ''; %> aria-current="page" href="/about"><i class="fa-solid fa-address-card"></i>AboutMe</a>
@@ -32,15 +32,15 @@
             <% if(displayName){ %> 
 
                 <li class="px-5 nav-item">
-                  <a class="nav-link" aria-current="page" href="/business-contact-list"><i class="fa-solid fa-book"></i>ContactList</a>
+                  <a class="nav-link" aria-current="page" href="/album-list"><i class="fa-duotone fa-album"></i></a>
                 </li> 
 
                 <li class="px-5 nav-item ">
-                  <a class="nav-link" aria-current="page" href="/logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                  <a class="nav-link" aria-current="page" href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
                 </li>
             <% } else { %>
               <li class="px-5 nav-item ">
-                <a class="nav-link" aria-current="page" href="/login"><i class="fa-solid fa-user"></i>Login</a>
+                <a class="nav-link" aria-current="page" href="/login"><i class="fa-solid fa-user"></i></a>
               </li>
               <% } %>
               <!-- <a class="nav-link dropdown-toggle" href="/login" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
